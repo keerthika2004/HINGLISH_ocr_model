@@ -58,7 +58,3 @@ with gr.Blocks() as demo:
     search_button.click(fn=highlight_text, inputs=[extracted_text, search_term], outputs=highlighted_text)
 
 demo.launch(share=True)
-
-gradio deploy
-
-!pip install huggingface_hub
